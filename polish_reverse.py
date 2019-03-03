@@ -2,7 +2,6 @@
 
 def parse_rpn(expression):
     
- 
     stack = []
  
     for val in expression.split(' '):
