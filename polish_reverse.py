@@ -1,9 +1,6 @@
 # Evaluate a reverse polish notation 
-
 def parse_rpn(expression):
-    
     stack = []
- 
     for val in expression.split(' '):
         if val in ['-', '+', '*', '/']:
             op1 = stack.pop()
@@ -15,7 +12,6 @@ def parse_rpn(expression):
             stack.append(result)
         else:
             stack.append(int(val))
- 
     return stack.pop()
 
 def main():
